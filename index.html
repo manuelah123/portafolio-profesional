@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuela Henao Bedoya | Portafolio Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-offset="70" tabindex="0">
+
+
+    <!-- Barra de Navegación Principal -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase brand-logo" href="#inicio">MHB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enlaces">Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sección principal de Inicio - Mi presentación -->
+    <header id="inicio" class="hero-section d-flex align-items-center min-vh-100 text-dark pt-5">
+        <div class="row w-100 justify-content-center m-0 position-relative z-1">
+            <div class="container mt-5 pt-4">
+                <div
+                    class="row align-items-center justify-content-center text-center text-lg-start flex-column-reverse flex-lg-row">
+                    <div class="col-lg-5 ms-lg-5">
+                        <div class="mb-3 slide-in-bottom">
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 fw-semibold"
+                                style="letter-spacing: 0.5px;">Portafolio Profesional</span>
+                        </div>
+                        <h1 class="display-3 fw-bolder mb-3 text-dark slide-in-bottom" style="line-height: 1.1;">
+                            Hola, soy <br> <span class="text-primary">Manuela Henao Bedoya</span>
+                        </h1>
+                        <p class="lead fw-normal text-secondary mb-4 fade-in-delayed">Estudiante de Tecnología en
+                            Desarrollo de Software.</p>
+                        <p class="text-muted mb-5 fade-in-delayed fs-5">
+                            Bienvenida(o) a mi Portafolio. Aquí comparto algunos proyectos, las herramientas que manejo
+                            y mi proceso de aprendizaje.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4 fade-in-delayed">
+                            <a href="#proyectos"
+                                class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm fw-medium">Ver Proyectos</a>
+                            <button onclick="window.print()"
+                                class="btn btn-outline-secondary btn-lg rounded-pill px-4 fw-medium"><i
+                                    class="bi bi-file-earmark-pdf me-2"></i>Guardar como PDF</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-5 mb-lg-0 text-center fade-in-delayed position-relative pt-lg-5 pe-lg-5">
+                        <div class="hero-img-wrapper mx-auto z-1 position-relative">
+                            <div class="position-absolute top-50 start-50 translate-middle bg-primary rounded-circle"
+                                style="width: 250px; height: 250px; opacity: 0.1; filter: blur(30px); z-index: -1;">
+                            </div>
+                            <img src="foto.jpg" alt="Manuela Henao Bedoya"
+                                class="img-fluid hero-img shadow-lg rounded-circle"
+                                style="border: 6px solid white; max-width: 260px;"
+                                onerror="this.src='https://ui-avatars.com/api/?name=Manuela+Henao&size=400&background=4F46E5&color=fff'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección "Sobre Mí" - Mi biografía y educación -->
+        <section id="sobre-mi" class="py-5 bg-white">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="section-title mb-4">Sobre Mí</h2>
+                        <p class="text-muted lead pb-3">
+                            Soy Manuela Henao Bedoya, estudiante de Tecnología en Desarrollo de Software apasionada por
+                            la programación y
+                            el aprendizaje continuo. Me gusta asumir retos, proponer ideas nuevas y buscar soluciones
+                            eficientes a los problemas a través del código. Actualmente estoy enfocada en fortalecer mis
+                            habilidades prácticas y busco oportunidades que me permitan aplicar mis conocimientos y
+                            crecer profesionalmente en la industria tecnológica.
+                        </p>
+
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-4">
+                                <h5 class="fw-bold"><i class="bi bi-person-lines-fill text-primary me-2"></i> Datos
+                                    Personales</h5>
+                                <ul
+                                    class="list-unstyled text-muted custom-list border-start border-3 border-primary ps-3">
+                                    <li><strong>Email:</strong> m.henao10@utp.edu.co</li>
+                                    <li><strong>Teléfono:</strong> 3223267965</li>
+                                    <li><strong>Ciudad:</strong> Pereira, Colombia</li>
+                                    <li><strong>Disponibilidad:</strong> Tiempo completo / Prácticas</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h5 class="fw-bold"><i class="bi bi-mortarboard text-primary me-2"></i> Educación</h5>
+                                <ul
+                                    class="list-unstyled text-muted custom-list border-start border-3 border-primary ps-3">
+                                    <li>Estudiante de Tecnología en Desarrollo de Software</li>
+                                    <li>
+                                        Certificados en Inteligencia Artificial:<br>
+                                        <a href="30401%20LATAM%20v1-26.pdf" target="_blank"
+                                            class="text-decoration-none small text-primary d-block mt-2"><i
+                                                class="bi bi-file-earmark-pdf-fill text-danger"></i> Certificado IA
+                                            LATAM</a>
+                                        <a href="Manuela%20%20_manuelahenaobedoya15@gmail.com.pdf" target="_blank"
+                                            class="text-decoration-none small text-primary d-block mt-1"><i
+                                                class="bi bi-file-earmark-pdf-fill text-danger"></i> Certificado IA
+                                            (Email)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h5 class="fw-bold"><i class="bi bi-heart text-primary me-2"></i> Aficiones</h5>
+                                <ul class="list-unstyled text-muted custom-list d-flex flex-wrap gap-3">
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i> Leer</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i> Jugar voleibol</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i> Escuchar música</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i> Ver series</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i> Armar legos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- Sección de Mi Enfoque Profesional -->
+        <!-- ========================================= -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                        <h2 class="display-6 fw-bold mb-4">Mi Enfoque</h2>
+                        <p class="text-muted fs-5 mb-4">Enfocada en el desarrollo práctico de software, la resolución de
+                            problemas y la automatización de procesos,
+                            con interés en el desarrollo web y el uso de herramientas tecnológicas..</p>
+                        <a href="#experiencia" class="btn btn-primary rounded-pill px-4 shadow-sm">Ver mi recorrido
+                            académico</a>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <!-- Pilar 1 -->
+                        <div class="d-flex mb-4 p-4 bg-white rounded-4 shadow-sm project-card">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-puzzle fs-3"></i>
+                            </div>
+                            <div class="ms-4 text-start">
+                                <h4 class="fw-bold mb-2">Resolución de Problemas</h4>
+                                <p class="text-muted mb-0 small">Me apasiona enfrentarme a retos de lógica, optimizar
+                                    algoritmos y buscar la mejor forma de construir soluciones reales y eficientes.</p>
+                            </div>
+                        </div>
+                        <!-- Pilar 2 -->
+                        <div class="d-flex p-4 bg-white rounded-4 shadow-sm project-card">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-arrow-repeat fs-3"></i>
+                            </div>
+                            <div class="ms-4 text-start">
+                                <h4 class="fw-bold mb-2">Aprendizaje Continuo</h4>
+                                <p class="text-muted mb-0 small">La curiosidad me impulsa. Siempre busco integrar nuevas
+                                    tecnologías, frameworks y destrezas que complementen mi carrera.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia y Formación Continua -->
+        <section id="experiencia" class="py-5 bg-white">
+            <div class="container py-5">
+                <h2 class="section-title mb-5 text-center">Recorrido Académico</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="border-start border-primary border-3 ms-md-3 py-2">
+                            <div class="mb-5 position-relative ps-4 ps-md-5">
+                                <span class="position-absolute bg-primary rounded-circle"
+                                    style="width: 16px; height: 16px; left: -9.5px; top: 4px;"></span>
+                                <h5 class="fw-bold mb-1">Proyectos Académicos Universitarios</h5>
+                                <h6 class="text-primary mb-2">Universidad Tecnológica de Pereira (UTP)</h6>
+                                <p class="text-muted">Mi experiencia se basa en el desarrollo de proyectos abarcando
+                                    lógica de programación,
+                                    estructuras de datos y aplicaciones orientadas a objetos. Estos proyectos
+                                    han simulado entornos reales de desarrollos principalmente en un entorno academico.
+                                </p>
+                            </div>
+                            <div class="mb-3 position-relative ps-4 ps-md-5">
+                                <span class="position-absolute bg-primary rounded-circle"
+                                    style="width: 16px; height: 16px; left: -9.5px; top: 4px;"></span>
+                                <h5 class="fw-bold mb-1">Cursos Complementarios</h5>
+                                <h6 class="text-primary mb-2">Formación Continua</h6>
+                                <p class="text-muted mt-2">Estudio autodidacta y certificaciones orientadas a las nuevas
+                                    tecnologías, como los cursos de Inteligencia Artificial de LATAM, los cuales han
+                                    fortalecido mi comprensión de herramientas modernas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección de Habilidades Técnicas y Blandas -->
+        <section id="habilidades" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Habilidades & Idiomas</h2>
+                    <p class="text-muted">Mis competencias técnicas, habilidades blandas y dominio de idiomas.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Técnicas -->
+                    <div class="col-md-5">
+                        <h4 class="fw-bold mb-4 text-center"><i class="bi bi-gear-fill text-primary me-2"></i>Técnicas
+                        </h4>
+                        <div class="card border-0 shadow-sm p-4 h-100 bg-light">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">HTML & CSS</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">Java</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">C++</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">Git & GitHub</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blandas & Idiomas -->
+                    <div class="col-md-5">
+                        <h4 class="fw-bold mb-4 text-center"><i class="bi bi-people-fill text-primary me-2"></i>Blandas
+                            e Idiomas</h4>
+                        <div class="card border-0 shadow-sm p-4 h-100 bg-light">
+                            <h5 class="fw-bold mb-3 fs-6 text-secondary border-bottom pb-2">Habilidades Blandas</h5>
+                            <ul class="list-unstyled text-muted mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Trabajo en
+                                    equipo</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Comunicación
+                                    efectiva</li>
+                                <li class="mb-2"><i
+                                        class="bi bi-check-circle-fill text-success me-2"></i>Responsabilidad y
+                                    compromiso</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Resolución de
+                                    problemas</li>
+                            </ul>
+
+                            <h5 class="fw-bold mb-3 fs-6 text-secondary border-bottom pb-2 mt-2">Idiomas</h5>
+                            <ul class="list-unstyled text-muted mb-0">
+                                <li class="mb-2"><strong>Español:</strong> Nativo</li>
+                                <li class="mb-0"><strong>Inglés:</strong> Básico</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Mis Proyectos -->
+        <section id="proyectos" class="py-5 bg-white">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="text-muted">Algunos de los proyectos en los que he trabajado recientemente.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm project-card">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Java</span>
+                                <span class="badge bg-secondary mb-2">POO</span>
+                                <h5 class="card-title fw-bold">J&M Veterinary</h5>
+                                <p class="card-text text-muted small">Sistema de escritorio J&M en Java para gestionar
+                                    historias clínicas de una veterinaria,
+                                    con manejo de entidades como mascotas, propietarios y veterinarios. Implementa
+                                    Programación Orientada a
+                                    Objetos con clases bien definidas y persiste datos en MySQL mediante tablas en
+                                    phpMyAdmin, incluyendo operaciones CRUD
+                                    y exportación de registros en PDF.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0 pb-3">
+                                <a href="https://github.com/manuelah123/Veterinary" target="_blank"
+                                    class="btn btn-outline-primary btn-sm rounded-pill">Ver Repositorio <i
+                                        class="bi bi-github ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm project-card">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2">C++</span>
+                                <span class="badge bg-dark mb-2">Estructuras de Datos</span>
+                                <h5 class="card-title fw-bold">Mix-Bright</h5>
+                                <p class="card-text text-muted small">Reproductor de música en C++ con SDL2 que
+                                    implementa estructuras de datos avanzadas (lista doblemente enlazada, árbol AVL,
+                                    tabla hash) para la gestión eficiente de canciones.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0 pb-3">
+                                <a href="https://github.com/manuelah123/Mix-Bright" target="_blank"
+                                    class="btn btn-outline-primary btn-sm rounded-pill">Ver Repositorio <i
+                                        class="bi bi-github ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Proyecto 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm project-card">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2">C++</span>
+                                <span class="badge bg-dark mb-2">Estructuras de Datos</span>
+                                <h5 class="card-title fw-bold">Librería Daunt Books</h5>
+                                <p class="card-text text-muted small">Sistema de catalogación y recomendación de libros
+                                    en C++ utilizando tabla hash. Permite incorporar nuevas publicaciones, generar
+                                    recomendaciones por autor y mostrar rankings.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0 pb-3">
+                                <a href="https://github.com/manuelah123/LIBRERIA-DAUNT-BOOKS" target="_blank"
+                                    class="btn btn-outline-primary btn-sm rounded-pill">Ver Repositorio <i
+                                        class="bi bi-github ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Enlaces de Interés -->
+        <section id="enlaces" class="py-5 bg-light">
+            <div class="container py-5 text-center">
+                <h2 class="section-title mb-5">Enlaces de Interés</h2>
+                <div class="row justify-content-center gap-4">
+                    <div class="col-md-5">
+                        <a href="https://github.com/manuelah123" target="_blank" class="text-decoration-none">
+                            <div
+                                class="card link-card h-100 border-0 shadow-sm p-4 d-flex flex-row align-items-center justify-content-center bg-dark text-white rounded-4">
+                                <i class="bi bi-github display-5 me-3"></i>
+                                <h5 class="m-0 fw-bold">Mi GitHub</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="https://developer.mozilla.org/es/" target="_blank" class="text-decoration-none">
+                            <div
+                                class="card link-card h-100 border-0 shadow-sm p-4 d-flex flex-row align-items-center justify-content-center bg-primary text-white rounded-4">
+                                <i class="bi bi-journal-code display-5 me-3"></i>
+                                <h5 class="m-0 fw-bold">Documentación MDN</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="py-5 position-relative bg-white">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Deja tus datos</h2>
+                            <p class="text-muted">Si tienes alguna vacante o estas interesad@ en mi perfil, no dudes en
+                                dejar tus datos.</p>
+                        </div>
+                        <div class="card border-0 shadow p-4 p-md-5 rounded-4 bg-white">
+                            <form id="contact-form" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label fw-medium">Nombre completo</label>
+                                        <input type="text" class="form-control bg-light" id="nombre" name="nombre"
+                                            pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" minlength="3" maxlength="50"
+                                            placeholder="Ej: Juan Pérez" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa un nombre válido (solo letras, mín. 3 caracteres).
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-medium">Correo electrónico</label>
+                                        <input type="email" class="form-control bg-light" id="email" name="email"
+                                            pattern=".+@gmail\.com" placeholder="ejemplo@gmail.com" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa un correo válido. (Requisito: que termine en @gmail.com)
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="programa" class="form-label fw-medium">Motivo de contacto</label>
+                                        <select class="form-select bg-light" id="programa" name="programa" required>
+                                            <option value="" selected disabled>Seleccione una opción...</option>
+                                            <option value="Oportunidad de pasantía / práctica">Oportunidad de pasantía /
+                                                práctica</option>
+                                            <option value="Oportunidad laboral para Junior/Estudiante">Oportunidad
+                                                laboral (Junior)</option>
+                                            <option value="Colaboración o Networking">Colaboración en proyectos</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Por favor selecciona un motivo.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label fw-medium">Mensaje</label>
+                                        <textarea class="form-control bg-light" id="mensaje" name="mensaje" rows="4"
+                                            minlength="10" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                        <div class="invalid-feedback">
+                                            El mensaje debe tener al menos 10 caracteres.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="terminos"
+                                                name="terminos" required>
+                                            <label class="form-check-label text-muted small" for="terminos">
+                                                Acepto los términos y condiciones.
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Debes aceptar los términos y condiciones antes de enviar.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4 text-center">
+                                        <button class="btn btn-primary btn-lg rounded-pill px-5 w-100 fw-bold shadow-sm"
+                                            type="submit">
+                                            Enviar Mensaje <i class="bi bi-send ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Footer) con mis Redes Sociales -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <a href="mailto:[m.henao10@utp.edu.co]"
+                class="text-white bg-secondary p-2 rounded-circle hover-opacity d-inline-flex"><i
+                    class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.instagram.com/manuela_123._?igsh=Z3NpazZnbzF1cDVo" target="_blank"
+                class="text-white bg-secondary p-2 rounded-circle hover-opacity d-inline-flex"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://github.com/manuelah123" target="_blank"
+                class="text-white bg-secondary p-2 rounded-circle hover-opacity d-inline-flex"><i
+                    class="bi bi-github"></i></a>
+        </div>
+        <p class="mb-0 text-white-50 small">&copy;
+            <script>document.write(new Date().getFullYear())</script> Manuela Henao Bedoya. Todos los derechos
+            reservados.
+        </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

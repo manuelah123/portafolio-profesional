@@ -1,0 +1,295 @@
+/* 
+   Variables y Estilos Generales
+   Aquí defino los colores principales para mantener la coherencia en todo el portafolio 
+*/
+:root {
+    --primary-color: #4F46E5;
+    --primary-hover: #4338CA;
+    --dark-color: #111827;
+    --light-bg: #F9FAFB;
+    --transition-speed: 0.3s;
+}
+
+/* Tipografía base y fondo por defecto de la página */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #374151;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+/* Clases utilitarias de colores que sobreescriben el comportamiento por defecto de Bootstrap */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+/* Subrayado con estilo que coloco debajo del título de cada sección principal */
+.section-title {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Estilos de la Barra de Navegación (Menú Superior) */
+.navbar {
+    transition: all var(--transition-speed) ease;
+}
+
+/* Fondo semi-transparente oscuro con efecto de cristal (blur) cuando se hace scroll */
+.navbar.scrolled {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background-color: rgba(17, 24, 39, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+.brand-logo {
+    letter-spacing: 2px;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Línea animada que aparece cuando paso el cursor por encima de los botones del menú */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed) ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* 
+   Sección de Inicio (Hero) - La primera zona visible
+*/
+.hero-section {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-in-bottom {
+    animation: slideInBottom 1s ease-out;
+}
+
+.fade-in-delayed {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mis Botones Personalizados - Ajustes de color y sombra */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2) !important;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Efectos visuales para mi Foto de Perfil */
+.hero-img-wrapper {
+    max-width: 350px;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform var(--transition-speed) ease;
+}
+
+/* Hago que la foto crezca ligeramente al poner el ratón sobre ella para darle vida */
+.hero-img-wrapper:hover .hero-img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero-img-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.custom-list li {
+    padding: 5px 0;
+}
+
+/* Tarjetas (Cards) y Efectos Hover (Habilidades, Enlaces y Proyectos) */
+.skill-card,
+.link-card {
+    transition: all var(--transition-speed) ease;
+}
+
+/* Efecto de "elevación" para que parezca que las tarjetas flotan al tocarlas con el mouse */
+.skill-card:hover,
+.link-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.link-card.bg-dark:hover {
+    background-color: #1f2937 !important;
+}
+
+.link-card.bg-primary:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+/* Personalización del borde luminoso al hacer click en los campos del formulario */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+/* Elementos del Pie de Página (Iconos de Redes Sociales) */
+.hover-opacity {
+    transition: opacity var(--transition-speed) ease;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+
+/* Sección de mis Proyectos en el Portafolio */
+.project-card {
+    transition: all var(--transition-speed) ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* =========================================
+   Estilos para Impresión (Guardar como PDF)
+   ========================================= */
+@media print {
+    /* Forzar que se vean los colores de fondo y gradientes */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Ocultar elementos innecesarios al imprimir */
+    .navbar, 
+    .btn, 
+    #contacto, 
+    footer,
+    .badge {
+        display: none !important;
+    }
+
+    /* Ajustes de espaciado para que no se corten las secciones */
+    section {
+        page-break-inside: avoid;
+        padding: 20px 0 !important;
+    }
+
+    body {
+        background-color: white !important;
+        font-size: 12pt;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 20px !important;
+    }
+
+    /* Asegurar que el hero se vea bien */
+    .hero-section {
+        min-height: auto !important;
+        height: auto !important;
+        padding-top: 50px !important;
+    }
+
+    .hero-img {
+        max-width: 150px !important;
+    }
+}
